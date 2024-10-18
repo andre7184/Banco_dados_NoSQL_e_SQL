@@ -1,0 +1,60 @@
+// Comandos CRUD para Cassandra
+
+// 1. Create (Inserir Dados)
+
+// Criar um keyspace (equivalente a um banco de dados)
+CREATE KEYSPACE exemplo
+WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 1};
+
+// Usar o keyspace criado
+USE exemplo;
+
+// Criar uma tabela
+CREATE TABLE usuarios (
+    id UUID PRIMARY KEY,
+    nome TEXT,
+    email TEXT,
+    idade INT
+);
+
+// Inserir um único registro
+INSERT INTO usuarios (id, nome, email, idade) VALUES (uuid(), 'João Silva', 'joao@example.com', 30);
+
+// Inserir múltiplos registros
+BEGIN BATCH
+INSERT INTO usuarios (id, nome, email, idade) VALUES (uuid(), 'Maria Oliveira', 'maria@example.com', 25);
+INSERT INTO usuarios (id, nome, email, idade) VALUES (uuid(), 'Carlos Souza', 'carlos@example.com', 28);
+APPLY BATCH;
+
+// 2. Read (Consultar Dados)
+
+// Consultar todos os registros
+SELECT * FROM usuarios;
+
+// Consultar registros com uma condição
+SELECT * FROM usuarios WHERE idade > 25;
+
+// Consultar um único registro
+SELECT * FROM usuarios WHERE email = 'joao@example.com';
+
+// 3. Update (Atualizar Dados)
+
+// Atualizar um único registro
+UPDATE usuarios SET idade = 31 WHERE email = 'joao@example.com';
+
+// Atualizar múltiplos registros
+BEGIN BATCH
+UPDATE usuarios SET idade = 26 WHERE email = 'maria@example.com';
+UPDATE usuarios SET idade = 29 WHERE email = 'carlos@example.com';
+APPLY BATCH;
+
+// 4. Delete (Remover Dados)
+
+// Remover um único registro
+DELETE FROM usuarios WHERE email = 'joao@example.com';
+
+// Remover múltiplos registros
+BEGIN BATCH
+DELETE FROM usuarios WHERE email = 'maria@example.com';
+DELETE FROM usuarios WHERE email = 'carlos@example.com';
+APPLY BATCH;
