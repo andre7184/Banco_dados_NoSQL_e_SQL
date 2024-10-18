@@ -1,7 +1,5 @@
-# Banco_dados_NoSQL_e_SQL
-Conceitos, diferenças e características dos bancos de dados NoSQL e SQL.
-
 # Guia de Bancos de Dados Relacionais (SQL) e Não Relacionais (NoSQL)
+Conceitos, diferenças e características dos bancos de dados NoSQL e SQL.
 
 Este repositório contém uma coleção de conceitos, definições sobre bancos de dados relacionais (SQL) e não relacionais (NoSQL).
 
