@@ -1,5 +1,8 @@
 // Comandos CRUD para MongoDB
 
+// Criar um banco de dados (MongoDB cria automaticamente ao inserir dados)
+use exemploDB;
+
 // 1. Create (Inserir Documentos)
 
 // Inserir um único documento
