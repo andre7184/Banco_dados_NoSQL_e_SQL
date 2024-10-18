@@ -1,0 +1,60 @@
+// Comandos CRUD para MongoDB
+
+// 1. Create (Inserir Documentos)
+
+// Inserir um único documento
+db.usuarios.insertOne({
+    nome: "João Silva",
+    email: "joao@example.com",
+    idade: 30
+});
+
+// Inserir múltiplos documentos
+db.usuarios.insertMany([
+    {
+        nome: "Maria Oliveira",
+        email: "maria@example.com",
+        idade: 25
+    },
+    {
+        nome: "Carlos Souza",
+        email: "carlos@example.com",
+        idade: 28
+    }
+]);
+
+// 2. Read (Consultar Documentos)
+
+// Consultar todos os documentos
+db.usuarios.find();
+
+// Consultar documentos com uma condição
+db.usuarios.find({ idade: { $gt: 25 } });
+
+// Consultar um único documento
+db.usuarios.findOne({ email: "joao@example.com" });
+
+// 3. Update (Atualizar Documentos)
+
+// Atualizar um único documento
+db.usuarios.updateOne(
+    { email: "joao@example.com" },
+    { $set: { idade: 31 } }
+);
+
+// Atualizar múltiplos documentos
+db.usuarios.updateMany(
+    { idade: { $lt: 30 } },
+    { $set: { status: "jovem" } }
+);
+
+// 4. Delete (Remover Documentos)
+
+// Remover um único documento
+db.usuarios.deleteOne({ email: "joao@example.com" });
+
+// Remover múltiplos documentos
+db.usuarios.deleteMany({ idade: { $lt: 30 } });
+
+
+
