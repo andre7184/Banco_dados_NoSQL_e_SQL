@@ -15,7 +15,7 @@ Este repositório contém uma coleção de conceitos, definições sobre bancos 
 - **Exemplos:** MongoDB, Cassandra, Redis, HBase, Amazon DynamoDB, Neo4j.
 - **Vantagens:** Escalabilidade horizontal, flexibilidade de esquemas, desempenho em grandes volumes de dados e podem usar tipos de dados sem uma extruturacao e sem um conhecimento prévio).
 - **Desvantagens:** Consistência eventual, falta de padronização.
-- [Acesse nosso ducumento com maiores informações e exemplos](/SQL/DOCUMENTO.md).
+- [Acesse nosso ducumento com maiores informações e exemplos](/NoSQL/DOCUMENTO.md).
 
 ## Comparação SQL vs NoSQL
 - **Estrutura de Dados:** SQL usa tabelas, NoSQL usa documentos, chave-valor, colunas ou grafos.
