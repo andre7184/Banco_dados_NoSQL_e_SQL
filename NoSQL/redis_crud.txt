@@ -1,0 +1,29 @@
+// Comandos CRUD para Redis
+
+// 1. Create (Inserir Dados)
+
+// Inserir um valor
+SET usuario:1:nome "João Silva"
+SET usuario:1:email "joao@example.com"
+SET usuario:1:idade "30"
+
+// 2. Read (Consultar Dados)
+
+// Consultar um valor
+GET usuario:1:nome
+
+// Consultar múltiplos valores
+MGET usuario:1:nome usuario:1:email usuario:1:idade
+
+// 3. Update (Atualizar Dados)
+
+// Atualizar um valor
+SET usuario:1:idade "31"
+
+// 4. Delete (Remover Dados)
+
+// Remover um valor
+DEL usuario:1:nome
+
+// Remover múltiplos valores
+DEL usuario:1:nome usuario:1:email usuario:1:idade
