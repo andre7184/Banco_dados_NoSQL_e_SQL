@@ -65,5 +65,3 @@ NoSQL, que significa "Not Only SQL" (Não Apenas SQL), é uma abordagem de banco
 - **E-commerce:** Catálogos de produtos, gerenciamento de inventário, dados de usuários.
 
 Os bancos de dados NoSQL são uma escolha poderosa para aplicações modernas que requerem flexibilidade, escalabilidade e desempenho. No entanto, a escolha entre SQL e NoSQL deve ser baseada nos requisitos específicos da aplicação e no contexto do uso.
-
-## EXEMPLOS [Arquivo de exemplo](/NoSQL/exemplos.sql)
