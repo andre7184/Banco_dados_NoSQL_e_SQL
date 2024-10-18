@@ -24,21 +24,25 @@ NoSQL, que significa "Not Only SQL" (Não Apenas SQL), é uma abordagem de banco
    - **Exemplos:** MongoDB [Site oficial MongoDB](https://www.mongodb.com), CouchDB [Site oficial CouchDB](https://couchdb.apache.org/).
    - **Adequado para:** Dados semi-estruturados e não estruturados, como JSON.
    - **Casos de Uso:** Aplicações web, sistemas de gerenciamento de conteúdo, catálogos de produtos, Armazenamento de dados de usuários, e-commerce.
+   - [Arquivo exemplo de uso (CRUD) MongoDB](/NoSQL/mongodb_crud.txt)
 
 2. **Chave-Valor:**
    - **Exemplos:** Redis [Site oficial Redis](https://redis.io), Amazon DynamoDB [Site oficial DynamoDB](https://aws.amazon.com/dynamodb/).
    - **Adequado para:** Dados que requerem acesso rápido e armazenamento em memória.
    - **Casos de Uso:** Sistemas de recomendação em tempo real, contadores de visitas, armazenamento de sessões, Cache de dados, filas de mensagens.
+   - [Arquivo exemplo de uso (CRUD) Redis](/NoSQL/redis_crud.txt)
 
 3. **Orientados a Colunas:**
    - **Exemplos:** Cassandra [Site oficial Cassandra](https://cassandra.apache.org), HBase [Site oficial HBase](https://hbase.apache.org).
    - **Adequado para:** Grandes volumes de dados distribuídos e ou em ambientes Hadoop.
    - **Casos de Uso:** Aplicações de big data, sistemas de recomendação, análise de logs, análise de grandes volumes de dados.
+   - [Arquivo exemplo de uso (CRUD) Cassandra](/NoSQL/cassandra_crud.txt)
 
 4. **Grafos:**
    - **Exemplos:** Neo4j [Site oficial Neo4j](https://neo4j.com), Amazon Neptune [Site oficial Amazon Neptune](https://aws.amazon.com/pt/neptune/).
    - **Adequado para:** Dados que envolvem relações complexas e interconexões.
    - **Casos de Uso:** Gerenciamento de redes, Análise de redes sociais, sistemas de recomendação, detecção de fraudes.
+   - [Arquivo exemplo de uso (CRUD) Neo4j](/NoSQL/neo4j_crud.txt)
 
 ## Vantagens dos Bancos de Dados NoSQL
 
