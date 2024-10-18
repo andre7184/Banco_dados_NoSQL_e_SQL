@@ -4,10 +4,9 @@
 Bancos de dados relacionais armazenam dados em tabelas com linhas e colunas. Cada tabela tem uma chave primária e pode ter relações com outras tabelas.
 
 ## Exemplos
-- MySQL
-- PostgreSQL
-- Oracle Database
-- [Exemplo de uso (CRUD) SQL](/SQL/sql_crud.txt)
+- MySQL [Exemplo de uso (CRUD) MySQL](/SQL/MySQL_crud.txt) - [Site oficial MySQL](https://www.mysql.com/)
+- PostgreSQL [Exemplo de uso (CRUD) PostgreSQL](/SQL/PostgreSQL_crud.txt) - [Site oficial PostgreSQL](https://www.postgresql.org/)
+- Oracle Database [Exemplo de uso (CRUD) Oracle Database](/SQL/OracleDatabase_crud.txt) - [Site oficial Oracle Database](https://www.oracle.com/br/database/)
 
 ## Vantagens
 - ACID compliance
@@ -17,6 +16,7 @@ Bancos de dados relacionais armazenam dados em tabelas com linhas e colunas. Cad
 ## Desvantagens
 - Escalabilidade vertical
 - Complexidade de esquemas
+  
 ## ACID Compliance: 
 - Atomicidade (Atomicity):
   - Definição: Garante que todas as operações dentro de uma transação sejam concluídas com sucesso ou, em caso de falha, nenhuma operação seja aplicada. Em outras palavras, uma transação é “tudo ou nada”.
