@@ -32,3 +32,5 @@ Bancos de dados relacionais armazenam dados em tabelas com linhas e colunas. Cad
 - Durabilidade (Durability):
   - Definição: Garante que, uma vez que uma transação seja confirmada (committed), suas alterações sejam permanentes, mesmo em caso de falhas de sistema.
   - Exemplo: Após a confirmação de uma transação de transferência bancária, o novo saldo das contas envolvidas será preservado, mesmo que ocorra uma falha de energia imediatamente após a confirmação.
+ 
+**[Exemplo de uso (CRUD) SQL](/SQL/sql_crud.txt)
