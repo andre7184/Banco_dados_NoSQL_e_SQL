@@ -1,0 +1,57 @@
+-- Comandos para SQL
+
+-- 1. Create Database (Criar Banco de Dados)
+
+-- Criar um banco de dados
+CREATE DATABASE exemploDB;
+
+-- Usar o banco de dados criado
+USE exemploDB;
+
+-- 2. Create Table (Criar Tabela)
+
+-- Criar uma tabela
+CREATE TABLE usuarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    idade INT
+);
+
+-- 3. Create (Inserir Dados)
+
+-- Inserir um único registro
+INSERT INTO usuarios (nome, email, idade) VALUES ('João Silva', 'joao@example.com', 30);
+
+-- Inserir múltiplos registros
+INSERT INTO usuarios (nome, email, idade) VALUES 
+('Maria Oliveira', 'maria@example.com', 25),
+('Carlos Souza', 'carlos@example.com', 28);
+
+-- 4. Read (Consultar Dados)
+
+-- Consultar todos os registros
+SELECT * FROM usuarios;
+
+-- Consultar registros com uma condição
+SELECT * FROM usuarios WHERE idade > 25;
+
+-- Consultar um único registro
+SELECT * FROM usuarios WHERE email = 'joao@example.com';
+
+-- 5. Update (Atualizar Dados)
+
+-- Atualizar um único registro
+UPDATE usuarios SET idade = 31 WHERE email = 'joao@example.com';
+
+-- Atualizar múltiplos registros
+UPDATE usuarios SET idade = 26 WHERE email = 'maria@example.com';
+UPDATE usuarios SET idade = 29 WHERE email = 'carlos@example.com';
+
+-- 6. Delete (Remover Dados)
+
+-- Remover um único registro
+DELETE FROM usuarios WHERE email = 'joao@example.com';
+
+-- Remover múltiplos registros
+DELETE FROM usuarios WHERE idade < 30;
