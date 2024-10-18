@@ -1,0 +1,33 @@
+-- Comandos para PostgreSQL
+
+-- 1. Create Database (Criar Banco de Dados)
+CREATE DATABASE exemploDB;
+\c exemploDB; -- Conectar ao banco de dados
+
+-- 2. Create Table (Criar Tabela)
+CREATE TABLE usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    idade INT
+);
+
+-- 3. Create (Inserir Dados)
+INSERT INTO usuarios (nome, email, idade) VALUES ('João Silva', 'joao@example.com', 30);
+INSERT INTO usuarios (nome, email, idade) VALUES 
+('Maria Oliveira', 'maria@example.com', 25),
+('Carlos Souza', 'carlos@example.com', 28);
+
+-- 4. Read (Consultar Dados)
+SELECT * FROM usuarios;
+SELECT * FROM usuarios WHERE idade > 25;
+SELECT * FROM usuarios WHERE email = 'joao@example.com';
+
+-- 5. Update (Atualizar Dados)
+UPDATE usuarios SET idade = 31 WHERE email = 'joao@example.com';
+UPDATE usuarios SET idade = 26 WHERE email = 'maria@example.com';
+UPDATE usuarios SET idade = 29 WHERE email = 'carlos@example.com';
+
+-- 6. Delete (Remover Dados)
+DELETE FROM usuarios WHERE email = 'joao@example.com';
+DELETE FROM usuarios WHERE idade < 30;
