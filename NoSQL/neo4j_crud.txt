@@ -1,0 +1,45 @@
+// Comandos CRUD para Neo4j
+
+// 1. Create (Inserir Dados)
+
+// Criar um nó
+CREATE (u:Usuario {nome: 'João Silva', email: 'joao@example.com', idade: 30});
+
+// Criar múltiplos nós
+CREATE (u1:Usuario {nome: 'Maria Oliveira', email: 'maria@example.com', idade: 25}),
+       (u2:Usuario {nome: 'Carlos Souza', email: 'carlos@example.com', idade: 28});
+
+// 2. Read (Consultar Dados)
+
+// Consultar todos os nós
+MATCH (u:Usuario) RETURN u;
+
+// Consultar nós com uma condição
+MATCH (u:Usuario) WHERE u.idade > 25 RETURN u;
+
+// Consultar um único nó
+MATCH (u:Usuario {email: 'joao@example.com'}) RETURN u;
+
+// 3. Update (Atualizar Dados)
+
+// Atualizar um único nó
+MATCH (u:Usuario {email: 'joao@example.com'})
+SET u.idade = 31
+RETURN u;
+
+// Atualizar múltiplos nós
+MATCH (u:Usuario)
+WHERE u.idade < 30
+SET u.status = 'jovem'
+RETURN u;
+
+// 4. Delete (Remover Dados)
+
+// Remover um único nó
+MATCH (u:Usuario {email: 'joao@example.com'})
+DELETE u;
+
+// Remover múltiplos nós
+MATCH (u:Usuario)
+WHERE u.idade < 30
+DELETE u;
